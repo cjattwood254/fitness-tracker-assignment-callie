@@ -10,15 +10,25 @@
             <div class="logo-container">
                 <img src="assets/logo (1).png" alt="Fitness Tracker Logo">
             </div>
-            <h1>Fitness Tracker</h1>
             <div class="task">
-                <h2>Daily Workout Summary</h2>
+                <h3>Daily Workout Summary</h3>
                 <label for="workout-summary">Completed Workouts</label>
             </div>
             <div class="task">
-                <label for="new-exercise">Add a New Exercise to Your Workout</label>
+                <h3>Add a New Exercise to Your Log</h3>
+                <label for="exercise-name">Name of Exercise</label>
+                    <input type="text" id="exercise-name">
+                <label for="exercise-type">Type of Exercise</label>
+                    <select id="exercise-type">
+                        <option value="Strength">Strength Training</option>
+                        <option value="Cardio">Cardio</option>
+                        <option value="Stretching">Stretching</option>
+                    </select>
+                <label for="exercise-reps">Number of Reps</label>
+                    <input type="number" id="exercise-reps">
             </div>   
             <div class="task">
+                <h3>View Past Completed Workouts</h3>
                 <label for="past-workouts">View Past Completed Workouts</label>
             </div>
         </div>
