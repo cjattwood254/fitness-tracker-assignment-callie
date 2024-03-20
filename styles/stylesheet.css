@@ -37,3 +37,8 @@ input[type="text"], input[type="number"], select {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
+button {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(245, 215, 215);
+}
