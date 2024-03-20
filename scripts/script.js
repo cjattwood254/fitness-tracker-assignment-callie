@@ -39,4 +39,20 @@ document.addEventListener('DOMContentLoaded', () => {
             listElement.appendChild(listItem);
             });
         }
-    });
+
+    displayArrayList(filterCompletedExercise(loggedWorkouts), 'added-workout');
+
+    document.getElementById('add-new-workout').onclick = () => {
+        const name = document.getElementById('exercise-name').value;
+        const type = document.getElementById('exercise-type').value;
+        const duration = document.getElementById('exercise-duration').value;
+
+        let workout;
+            newWorkout = new workout(name, type, duration);
+
+
+        workouts.push(workout);
+        displayArrayList(workouts, 'new-workout');
+    };
+
+})
