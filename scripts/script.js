@@ -1,14 +1,17 @@
 // array to store types of exercise
 const logs = [
-    {name: "30 Second Hamstring Stretch", type: "Stretch", duration: "Two 30-second reps"},
-    {name: "Pushups", type: "Strength", duration: "10 reps"},
-    {name: "Jumping Jacks", type: "Stretching", duration: "30 reps"},
-    {name: "Hip Flexor Stretch", type: "Stretch", duration: "Two 30-second reps each side"}
+    {name: "30 Second Hamstring Stretch", type: "Stretch", duration: "Two 30-second reps", complete: true},
+    {name: "Pushups", type: "Strength", duration: "10 reps", complete: true},
+    {name: "Jumping Jacks", type: "Cardio", duration: "30 reps", complete: true},
+    {name: "Hip Flexor Stretch", type: "Stretch", duration: "Two 30-second reps each side", complete: false}
 ];
 
+var totalDuration = [1, 2, 1.5, 2];
 
-// workout summary calculation (come back to later?)
-function calculateTotalDuration(durationArray)
+// workout summary calculation: one to calculate total time spent on workout, one to filter only completed exercises
+function calculateTotalDuration(durationArray){
+    return durationArray.reduce((total, duration) => total + duration, 0);
+}
     
 
 // create a Workout Class
