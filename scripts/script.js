@@ -8,7 +8,17 @@ const logs = [
 
 
 // workout summary calculation (come back to later?)
-function calculateTotalDuration(durationArray){
+function calculateTotalDuration(durationArray)
     
 
 // create a Workout Class
+class Workout{
+    constructor(name, type, duration){
+        this.name = name;
+        this.type = type;
+        this,duration = duration;
+    }
+    displayInfo(){
+        return `Name of Exercise: ${this.name} | Type of Exercise: ${this.type} | Duration of Exercise: ${this.duration}`;
+    }
+}
